@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Automóvil eléctrico | Coradir</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<meta name="description" content="Empresa de tecnología. Productos informáticos y electrónicos de fabricación argentina.">
+   	<meta name="keywords"  content="CELULAR, COMPUTADORA, LAPTOP, AUTO ELECTRICO, TECNOLOGÍA ARGENTINA, INNOVACION">
+
+</head>
+<body>
+
+<!--Navegación-->
+<nav class="nav navbar navbar-expand-md navbar-dark">
+		<div class="nav justify-content-center">
+		 <!-- Brand -->
+		  <a class="navbar-brand" href="index.html"><img class="logo" src="css/images/logo.png"></a>
+	
+		  <!-- Toggler/collapsibe Button -->
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+	
+		  <!-- Navbar links -->
+		  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+				<a class="nav-link" href="productos.html">Productos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="automovil.html">Nosotros</a>
+				</li>
+				<li class="nav-item">
+				 <a class="nav-link" href="nosotros.html">Nosotros</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contacto.html">Contacto</a>
+				</li>
+			</ul>
+		  </div>	
+		</div>
+</nav>
+
+<section>
+    <div class="imagen_automovil">
+    </div>
+
+</section>
+<section>
+	<h1 class="titulo_header titulo_automovil">Automóvil Eléctrico</h1>
+</section>
+<section class="seccion">
+    <div class="row">
+        <div class="col">
+            <img src="css/images/tito_2_sm.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview">
+        </div>
+        <div class="col">
+            <img src="css/images/tito_3_sm.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview">
+        </div>
+        <div class="col">
+            <img src="css/images/tito_4_sm.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview">
+        </div>
+        <div class="col">
+            <img src="css/images/tito_5_sm.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview">
+        </div>
+    </div>
+       
+    <div id="Lightbox" class="modal">
+        
+            <span class="close pointer" onclick="closeLightbox()">&times;</span>
+            <div class="modal-content">
+            <div class="slide">
+            <img src="css/images/tito_2_ex.jpg" class="image-slide" alt="Toy car on the road." />
+            </div>
+            <div class="slide">
+            <img src="css/images/tito_3_ex.jpg" class="image-slide" alt="Toy car exploring offroad." />
+            </div>
+            <div class="slide">
+            <img src="css/images/tito_4_ex.jpg" class="image-slide" alt="Toy car in the city." />
+            </div>
+            <div class="slide">
+                <img src="css/images/tito_5_ex.jpg" class="image-slide" alt="Toy car in the city." />
+            </div>
+        
+            <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        
+            <div class="dots">
+                <div class="col">
+                    <img src="css/images/tito_2_sm.jpg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Toy Car Touring City">
+                </div>
+                <div class="col">
+                    <img src="css/images/tito_3_sm.jpg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Toy Car Touring City">
+                </div>
+                <div class="col">
+                    <img src="css/images/tito_4_sm.jpg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Toy Car Touring City">
+                </div>
+                <div class="col">
+                    <img src="css/images/tito_5_sm.jpg" class="modal-preview hover-shadow" onclick="toSlide(4)" alt="Toy Car Touring City">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer>
+	<p>Coradir © 2021. Todos los derechos reservados.</p>
+</footer>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="js/lightbox.js"></script>
+
+</body>
+</html>

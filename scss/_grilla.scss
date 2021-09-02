@@ -1,0 +1,36 @@
+.grilla{
+    padding: 50px;
+    display: grid;
+    grid-template-areas:
+      "foto titulo_2 titulo_2"
+      "foto texto texto"
+      "foto foto_2 foto_3";
+    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: auto;
+
+    .foto{
+        grid-area: foto;
+        background-image: url(images/foto_1.jpg);
+        background-size: cover;
+        background-color: black;
+      }
+
+    .foto_2{
+        grid-area: foto_2;
+        background-image: url(images/foto_2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+      }
+      
+    .foto_3{
+        grid-area: foto_3;
+        background-image: url(images/foto_3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+      }
+  }
